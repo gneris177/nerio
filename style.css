@@ -1,0 +1,70 @@
+:root {
+  --color-black-100: #161617;
+  --color-black-200: #2e2f30;
+  --color-black-300: #666769;
+  --color-black-400: #c8c9cc;
+  --color-white-500: #c8c9cc;
+  --color-white-600: #d9dbde;
+  --color-white-700: #f5f6f7;
+  --color-white-800: #fcfdff;
+  --color-blue-100: #081732;
+  --color-blue-200: #112d5e;
+  --color-blue-300: #adc0e3;
+  --color-golden-100: #543d1d;
+  --color-golden-200: #b8a182;
+  --color-golden-300: #f5efe6;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+html {
+  font-size: 62.5%; /* font-size 1em = 10px on default browser settings */
+}
+
+/* --------- NAV --------- */
+
+nav {
+  padding: 1.6rem 0;
+
+  display: flex;
+  justify-content: center;
+  background-color: #c8c9cc; /* <<<<<<<<< REMOVER NO FIM DO PROJETO */
+}
+
+nav .container {
+  width: 85%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+.links {
+  display: flex;
+  gap: 4rem;
+  margin-right: 3rem;
+}
+
+.links a {
+  color: var(--color-blue-100);
+  font-size: 1.6rem;
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  padding: 1.6rem 2.4rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--color-white-700);
+  background-color: var(--color-blue-200);
+}
