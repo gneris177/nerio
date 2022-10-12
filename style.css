@@ -2,7 +2,7 @@
   --color-black-100: #161617;
   --color-black-200: #2e2f30;
   --color-black-300: #666769;
-  --color-black-400: #c8c9cc;
+  --color-black-400: #a5a7ac;
   --color-white-500: #c8c9cc;
   --color-white-600: #d9dbde;
   --color-white-700: #f5f6f7;
@@ -23,21 +23,21 @@
 }
 
 html {
-  font-size: 62.5%; /* font-size 1em = 10px on default browser settings */
+  font-size: 62.5%; /* font-size 1rem = 10px on default browser settings */
 }
 
 /* --------- NAV --------- */
 
 nav {
-  padding: 1.6rem 0;
+  padding: 1.5rem 0;
 
   display: flex;
   justify-content: center;
-  background-color: #c8c9cc; /* <<<<<<<<< REMOVER NO FIM DO PROJETO */
+  background-color: #eff0f5; /* <<<<<<<<< REMOVER NO FIM DO PROJETO */
 }
 
 nav .container {
-  width: 85%;
+  width: 70%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -65,6 +65,67 @@ button {
   padding: 1.6rem 2.4rem;
   font-size: 1.6rem;
   font-weight: 700;
+  letter-spacing: 2.5px;
   color: var(--color-white-700);
   background-color: var(--color-blue-200);
 }
+
+/* --------- SECTION - BANNER --------- */
+
+.banner {
+  position: relative;
+  width: 100vw;
+  height: calc(100vh - 8.2rem);
+  background: url("assets/background.png") no-repeat;
+  background-size: cover;
+
+  display: flex;
+  justify-content: center;
+}
+
+.banner .container {
+  width: 70%;
+  display: flex;
+}
+
+.banner .container .description {
+  width: 45%;
+  position: absolute;
+  align-self: center;
+}
+
+.banner .container .description span {
+  font-size: 16px;
+  line-height: 30px;
+  color: var(--color-blue-300);
+}
+
+.banner .container .description h1 {
+  font-family: "Playfair Display SC";
+  font-size: 5.6rem;
+  line-height: 7.5rem;
+  color: var(--color-golden-200);
+}
+
+.banner .container .description p {
+  font-size: 2rem;
+  line-height: 3.2rem;
+  letter-spacing: 0.5px;
+  color: #a59e96;
+
+  margin: 2.5rem 0;
+}
+
+.description-contact {
+  color: var(--color-blue-200);
+  background-color: var(--color-white-700);
+}
+
+.banner .container img {
+  position: absolute;
+  width: 24%;
+  bottom: 0px;
+  right: 25rem;
+}
+
+/* --------- SECTION - ABOUT-ME --------- */
