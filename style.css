@@ -111,7 +111,7 @@ button {
 .banner .container .description p {
   font-size: 2rem;
   line-height: 3.2rem;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.05rem;
   color: var(--color-golden-200);
 
   margin: 2.5rem 0;
@@ -209,7 +209,7 @@ button {
   margin: 0.8rem 0;
   font-size: 1.4rem;
   line-height: 2.6rem;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.05rem;
   color: var(--color-black-300);
 }
 
@@ -254,17 +254,22 @@ button {
   font-size: 1.6rem;
   line-height: 3rem;
   text-align: center;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.05rem;
   color: var(--color-white-600);
 }
 
-/* --------- SECTION - EXPERTISE-DEPOSITIONS --------- */
+/* --------- SECTION - EXPERTISES --------- */
 
-.expertise-depositions {
+.expertises {
   padding: 12rem 0;
+  background: linear-gradient(
+    180deg,
+    rgba(252, 253, 255, 1) 0%,
+    rgba(245, 246, 247, 1) 100%
+  );
 }
 
-.expertise-depositions .consumer {
+.expertises .consumer {
   margin-bottom: 8rem;
 
   display: flex;
@@ -298,16 +303,16 @@ button {
   font-weight: 400;
   font-size: 24px;
   line-height: 44px;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.05rem;
   color: var(--color-black-100);
 }
 
 .consumer .description p {
   margin-bottom: 3rem;
-
   font-size: 1.4rem;
   line-height: 2.6rem;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.05rem;
+  color: var(--color-black-300);
 }
 
 .consumer .description button {
@@ -315,37 +320,123 @@ button {
 }
 
 /* ----- DIV - AREAS-EXPERTISE ----- */
-.divider {
-  height: 1rem;
-  background: linear-gradient(to left, green, yellow);
+.areas-expertise {
+  display: flex;
+  flex-direction: column;
 }
 
-.expertise-depositions h3 {
+.areas-expertise .title-areas-expertise {
+  margin-bottom: 4rem;
+
+  display: flex;
+  align-items: center;
+  gap: 1.4rem;
+}
+
+.title-areas-expertise .highlight-line {
+  width: 30rem;
+  height: 0.2rem;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(133, 147, 174, 1) 100%
+  );
+}
+
+.title-areas-expertise h3 {
   font-size: 3.2rem;
   line-height: 5.8rem;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.05rem;
   color: var(--color-blue-200);
 }
 
-.areas-expertise {
+.areas-expertise .items-expertise {
+  max-width: 60%;
+  align-self: center;
+
   display: grid;
   grid-template-columns: 1fr 1fr;
+  gap: 1.6rem 6rem;
 }
 
-.expertise {
+.item-expertise {
   display: flex;
   align-items: center;
 }
 
-.expertise span {
+.item-expertise span {
   margin-right: 1rem;
   font-size: 2.5rem;
   color: var(--color-blue-200);
 }
 
-.expertise p {
+.item-expertise p {
   font-size: 1.6rem;
   line-height: 3rem;
 
-  letter-spacing: 0.5px;
+  letter-spacing: 0.05rem;
+}
+
+/* --------- SEPARATOR --------- */
+.expertises .separator-line {
+  height: 0.2rem;
+  margin: 12rem 0;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(133, 147, 174, 1) 50%,
+    rgba(255, 255, 255, 1) 100%
+  );
+}
+
+/* ----- DIV - FAMILY-RIGHT ----- */
+.family-right {
+  display: flex;
+  justify-content: center;
+  gap: 6rem;
+}
+
+.family-right .description {
+  max-width: 55rem;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.family-right .description img {
+  align-self: flex-start;
+  margin-bottom: 3.2rem;
+}
+
+.family-right .description span {
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+  letter-spacing: 4.5px;
+  color: var(--color-blue-200);
+}
+
+.family-right .description h4 {
+  margin-bottom: 0.8rem;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 44px;
+  letter-spacing: 0.05rem;
+  color: var(--color-black-100);
+}
+
+.family-right .description p {
+  margin-bottom: 3rem;
+  font-size: 1.4rem;
+  line-height: 2.6rem;
+  letter-spacing: 0.05rem;
+  color: var(--color-black-300);
+}
+
+.family-right .description button {
+  align-self: flex-start;
+}
+
+/* --------- SECTION - DEPOSITIONS --------- */
+.depositions {
+  /* height: 30rem; */
 }
