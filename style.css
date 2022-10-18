@@ -257,3 +257,95 @@ button {
   letter-spacing: 0.5px;
   color: var(--color-white-600);
 }
+
+/* --------- SECTION - EXPERTISE-DEPOSITIONS --------- */
+
+.expertise-depositions {
+  padding: 12rem 0;
+}
+
+.expertise-depositions .consumer {
+  margin-bottom: 8rem;
+
+  display: flex;
+  justify-content: center;
+  gap: 6rem;
+}
+
+.consumer .description {
+  max-width: 55rem;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.consumer .description img {
+  align-self: flex-start;
+  margin-bottom: 3.2rem;
+}
+
+.consumer .description span {
+  margin-bottom: 1rem;
+
+  font-size: 1.4rem;
+  letter-spacing: 4.5px;
+  color: var(--color-blue-200);
+}
+
+.consumer .description h4 {
+  margin-bottom: 0.8rem;
+
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 44px;
+  letter-spacing: 0.5px;
+  color: var(--color-black-100);
+}
+
+.consumer .description p {
+  margin-bottom: 3rem;
+
+  font-size: 1.4rem;
+  line-height: 2.6rem;
+  letter-spacing: 0.5px;
+}
+
+.consumer .description button {
+  align-self: flex-start;
+}
+
+/* ----- DIV - AREAS-EXPERTISE ----- */
+.divider {
+  height: 1rem;
+  background: linear-gradient(to left, green, yellow);
+}
+
+.expertise-depositions h3 {
+  font-size: 3.2rem;
+  line-height: 5.8rem;
+  letter-spacing: 0.5px;
+  color: var(--color-blue-200);
+}
+
+.areas-expertise {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.expertise {
+  display: flex;
+  align-items: center;
+}
+
+.expertise span {
+  margin-right: 1rem;
+  font-size: 2.5rem;
+  color: var(--color-blue-200);
+}
+
+.expertise p {
+  font-size: 1.6rem;
+  line-height: 3rem;
+
+  letter-spacing: 0.5px;
+}
