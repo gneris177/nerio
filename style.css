@@ -148,14 +148,14 @@ button {
   position: relative;
   width: 50rem;
   height: 80rem;
-  background-color: #6c6c6ce8;
-  /* background-color: var(--color-white-600); */
+  background-color: var(--color-white-600);
 }
 
 .about-me .brand img {
   /* position: absolute;  */
   align-self: center;
   margin-left: 5rem;
+  opacity: 10%;
 }
 
 .about-me img {
@@ -171,7 +171,7 @@ button {
   /* margin: 0 auto; */
 }
 
-.about-me .container img {
+.about-me .photo-back img {
   width: 48rem;
 }
 
@@ -193,10 +193,9 @@ button {
   display: flex;
 }
 
-.check-paragraph span {
-  margin-right: 1rem;
-  font-size: 2.5rem;
-  color: var(--color-blue-200);
+.check-paragraph img {
+  width: 2.4rem;
+  margin: 1rem;
 }
 
 .about-me .description h4 {
@@ -364,10 +363,9 @@ button {
   align-items: center;
 }
 
-.item-expertise span {
-  margin-right: 1rem;
-  font-size: 2.5rem;
-  color: var(--color-blue-200);
+.item-expertise img {
+  width: 2.4rem;
+  margin: 1rem;
 }
 
 .item-expertise p {
