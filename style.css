@@ -60,7 +60,7 @@ nav .container {
   text-decoration: none;
 }
 
-button {
+.btn-contact {
   cursor: pointer;
   border: none;
   padding: 1.6rem 2.4rem;
@@ -117,14 +117,13 @@ button {
   margin: 2.5rem 0;
   font-weight: 300;
 }
-
-/* .banner .container .description p strong {
+.btn-contact-white {
+  cursor: pointer;
+  border: none;
+  padding: 1.6rem 2.4rem;
+  font-size: 1.6rem;
   font-weight: 700;
-  font-size: 20px;
-  line-height: 32px;
-} */
-
-.description-contact {
+  letter-spacing: 2.5px;
   color: var(--color-blue-200);
   background-color: var(--color-white-700);
 }
@@ -217,7 +216,6 @@ button {
 }
 
 /* --------- SECTION - HIGHLIGHTS --------- */
-
 .highlights {
   display: flex;
   justify-content: space-around;
@@ -434,5 +432,103 @@ button {
 
 /* --------- SECTION - DEPOSITIONS --------- */
 .depositions {
-  /* height: 30rem; */
+  /* height: 60rem; */
+  background: url("assets/background-depositions.svg");
+}
+
+.depositions .container {
+  display: flex;
+  align-items: center;
+}
+
+.logo-k-depoiment {
+  margin-left: -40px;
+  opacity: 20%;
+}
+
+.depoiment-body {
+  width: 100rem;
+}
+
+.depositions .container h3 {
+  font-family: "Playfair Display SC";
+  font-size: 4.2rem;
+  margin-bottom: 5.6rem;
+  color: var(--color-blue-100);
+}
+
+.depoiment {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.depositions .depoiment img {
+  width: 25rem;
+}
+
+.depositions .text-depoiment {
+  display: flex;
+  flex-direction: column;
+  margin-right: 5rem;
+}
+
+.depositions .text-depoiment p {
+  font-size: 1.6rem;
+  line-height: 3rem;
+  letter-spacing: 0.05rem;
+  color: var(--color-black-300);
+}
+
+.depositions .text-depoiment h5 {
+  margin-top: 2rem;
+  font-family: "Playfair Display SC";
+  font-size: 2.2rem;
+  line-height: 2.9rem;
+  color: var(--color-black-100);
+}
+
+.depoiment-body .depoiment .dots {
+  width: 1rem;
+}
+
+/* --------- SECTION - WHATSAPP --------- */
+.whatsapp {
+  background: url("assets/background.svg");
+}
+
+.whatsapp .container {
+  height: 40rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3.6rem;
+  background: url("assets/background-whatsapp.png");
+  background-position: center;
+}
+
+.whatsapp .container h3 {
+  width: 87rem;
+  font-size: 3.2rem;
+  line-height: 5.8rem;
+  text-align: center;
+  letter-spacing: 0.05rem;
+  color: var(--color-blue-300);
+}
+
+.btn-whatsapp {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding: 2rem 3.2rem;
+  gap: 1.6rem;
+  background: transparent;
+  border: 1px solid var(--color-white-700);
+
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: 0.25rem;
+  color: var(--color-white-700);
 }

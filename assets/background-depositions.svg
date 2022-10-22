@@ -1,0 +1,18 @@
+<svg width="1920" height="680" viewBox="0 0 1920 680" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<mask id="mask0_1345_1066" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="1920" height="680">
+<rect width="1920" height="680" fill="url(#paint0_linear_1345_1066)"/>
+</mask>
+<g mask="url(#mask0_1345_1066)">
+<rect width="1920" height="680" fill="url(#pattern0)" fill-opacity="0.05"/>
+</g>
+<defs>
+<pattern id="pattern0" patternContentUnits="objectBoundingBox" width="0.00958333" height="0.0270588">
+<use xlink:href="#image0_1345_1066" transform="scale(0.00119792 0.00338235)"/>
+</pattern>
+<linearGradient id="paint0_linear_1345_1066" x1="2077" y1="491.64" x2="551.481" y2="522.165" gradientUnits="userSpaceOnUse">
+<stop stop-color="#171616"/>
+<stop offset="1" stop-color="#171616" stop-opacity="0"/>
+</linearGradient>
+<image id="image0_1345_1066" width="8" height="8" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAAXNSR0IArs4c6QAAABdJREFUGBljYGBg+A/FQAoTMGEKDUcRAATwAgFGIXEOAAAAAElFTkSuQmCC"/>
+</defs>
+</svg>
