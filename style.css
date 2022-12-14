@@ -11,7 +11,7 @@
   --color-blue-200: #112d5e;
   --color-blue-300: #adc0e3;
   --color-golden-100: #543d1d;
-  --color-golden-200: #b8a182;
+  --color-golden-200: #ffce8c;
   --color-golden-300: #f5efe6;
 }
 
@@ -26,14 +26,23 @@ html {
   font-size: 62.5%; /* font-size 1rem = 10px on default browser settings */
 }
 
-/* --------- NAV --------- */
+/* --------- HEADER --------- */
+header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background: url("assets/background-header.png") no-repeat;
+  background-size: cover;
+  box-shadow: 0px 1.4rem 2.4rem rgba(0, 0, 0, 0.15);
+}
 
 nav {
   padding: 1.5rem 0;
 
   display: flex;
   justify-content: center;
-  background-color: #eff0f5; /* <<<<<<<<< REMOVER NO FIM DO PROJETO */
 }
 
 nav .container {
@@ -55,7 +64,7 @@ nav .container {
 }
 
 .links a {
-  color: var(--color-blue-100);
+  color: var(--color-white-800);
   font-size: 1.6rem;
   text-decoration: none;
 }
@@ -75,8 +84,8 @@ nav .container {
 
 .banner {
   position: relative;
-  /* width: 100vw; */
-  height: calc(100vh - 8.2rem);
+  padding-top: 8rem;
+  min-height: 100vh;
   background: url("assets/background.png") no-repeat;
   background-size: cover;
 
@@ -117,6 +126,7 @@ nav .container {
   margin: 2.5rem 0;
   font-weight: 300;
 }
+
 .btn-contact-white {
   cursor: pointer;
   border: none;
@@ -130,7 +140,7 @@ nav .container {
 
 .banner .container img {
   position: absolute;
-  width: 24%;
+  max-width: 25%;
   bottom: 0px;
   right: 25rem;
 }
@@ -154,7 +164,7 @@ nav .container {
   /* position: absolute;  */
   align-self: center;
   margin-left: 5rem;
-  opacity: 10%;
+  opacity: 15%;
 }
 
 .about-me img {
@@ -217,9 +227,12 @@ nav .container {
 
 /* --------- SECTION - HIGHLIGHTS --------- */
 .highlights {
+  padding: 12.5rem 0;
+
   display: flex;
   justify-content: space-around;
-  background: url("assets/background.png");
+  background-size: cover;
+  background: url("assets/highlight-background.png") no-repeat;
 }
 
 .highlights .container {
