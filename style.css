@@ -24,6 +24,7 @@
 
 html {
   font-size: 62.5%; /* font-size 1rem = 10px on default browser settings */
+  scroll-behavior: smooth; /* Scroll suave ao mudar de section */
 }
 
 /* --------- HEADER --------- */
@@ -35,7 +36,7 @@ header {
   z-index: 1;
   background: url("assets/background-header.png") no-repeat;
   background-size: cover;
-  box-shadow: 0px 1.4rem 2.4rem rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 1.4rem 2.4rem rgba(0, 0, 0, 0.5);
 }
 
 nav {
