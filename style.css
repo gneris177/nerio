@@ -27,6 +27,10 @@ html {
   scroll-behavior: smooth; /* Scroll suave ao mudar de section */
 }
 
+a {
+  text-decoration: none;
+}
+
 /* --------- HEADER --------- */
 header {
   width: 100%;
@@ -70,13 +74,21 @@ nav .container {
   text-decoration: none;
 }
 
-.btn-contact {
+.btn-default {
   cursor: pointer;
   border: none;
   padding: 1.6rem 2.4rem;
   font-size: 1.6rem;
   font-weight: 700;
   letter-spacing: 2.5px;
+}
+
+.btn-contact-white {
+  color: var(--color-blue-200);
+  background-color: var(--color-white-700);
+}
+
+.btn-contact {
   color: var(--color-white-700);
   background-color: var(--color-blue-200);
 }
@@ -122,19 +134,13 @@ nav .container {
   font-size: 2rem;
   line-height: 3.2rem;
   letter-spacing: 0.05rem;
-  color: var(--color-golden-200);
+  color: var(--color-golden-300);
 
   margin: 2.5rem 0;
   font-weight: 300;
 }
 
 .btn-contact-white {
-  cursor: pointer;
-  border: none;
-  padding: 1.6rem 2.4rem;
-  font-size: 1.6rem;
-  font-weight: 700;
-  letter-spacing: 2.5px;
   color: var(--color-blue-200);
   background-color: var(--color-white-700);
 }
@@ -508,7 +514,7 @@ nav .container {
 
 /* --------- SECTION - WHATSAPP --------- */
 .whatsapp {
-  background: url("assets/background.png");
+  background: url("assets/background-whatsapp.png");
 }
 
 .whatsapp .container {
@@ -545,4 +551,122 @@ nav .container {
   font-weight: 700;
   letter-spacing: 0.25rem;
   color: var(--color-white-700);
+}
+
+/* --------- SECTION - CONTACT --------- */
+.contact-social {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-social .container {
+  width: 100%;
+  max-width: 1170px;
+  padding: 12rem 0;
+
+  display: grid;
+  grid-template-areas: "contact social";
+  grid-template-columns: 1fr 1fr;
+  gap: 13rem;
+  align-items: center;
+}
+
+.contact-social .contact {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-social .contact h3 {
+  font-family: "Playfair Display SC";
+  font-size: 4.2rem;
+  line-height: 5.6rem;
+  color: var(--color-blue-100);
+}
+
+.contact-social .contact p {
+  margin: 3rem 0;
+  font-size: 1.4rem;
+  line-height: 2.6rem;
+  letter-spacing: 0.05rem;
+  color: var(--color-black-300);
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.contact .inputs {
+  color: var(--color-black-300);
+  padding: 1.5rem 2.4rem;
+  border: 1px solid var(--color-black-400);
+  resize: none;
+}
+
+.contact .btn-send-message {
+  color: var(--color-white-700);
+  background-color: var(--color-blue-200);
+}
+
+/* ---------- */
+
+.social h4 {
+  margin-bottom: 1.7rem;
+  font-size: 2.4rem;
+  line-height: 4.4rem;
+  letter-spacing: 0.05rem;
+  color: var(--color-black-100);
+}
+
+.social .social-links {
+  margin-bottom: 5rem;
+  display: flex;
+  gap: 1.6rem;
+}
+
+.social .social-description {
+  margin-bottom: 2.4rem;
+  font-size: 2rem;
+  line-height: 3.2rem;
+  letter-spacing: 0.05rem;
+  color: var(--color-black-300);
+}
+
+.social .social-card {
+  margin-bottom: 2.4rem; /* R E M O V E */
+  padding: 3.5rem 1.6rem;
+  display: flex;
+  align-items: center;
+
+  background-color: var(--color-white-700);
+}
+
+.social-card .card-icon {
+  margin-right: 2.4rem;
+}
+
+.social-card .container-data {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-card .data {
+  margin-right: 13.7rem;
+}
+
+.social-card .data p:nth-child(1) {
+  font-size: 1.6rem;
+  line-height: 2rem;
+  letter-spacing: 1px;
+  color: var(--color-blue-100);
+}
+
+.social-card .data p:nth-child(2) {
+  font-weight: 600;
+  font-size: 2.4rem;
+  line-height: 4.4rem;
+  letter-spacing: 0.05rem;
+  color: var(--color-golden-100);
 }
