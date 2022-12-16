@@ -37,7 +37,7 @@ header {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 1;
+  z-index: 2;
   background: url("assets/background-header.png") no-repeat;
   background-size: cover;
   box-shadow: 0px 1.4rem 2.4rem rgba(0, 0, 0, 0.5);
@@ -51,7 +51,8 @@ nav {
 }
 
 nav .container {
-  width: 70%;
+  width: 100%;
+  max-width: 1170px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -107,19 +108,24 @@ nav .container {
 }
 
 .banner .container {
-  width: 70%;
-  display: flex;
+  position: relative;
+
+  width: 100%;
+  max-width: 1170px;
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  grid-template-areas: "description image";
 }
 
 .banner .container .description {
-  width: 45%;
   position: absolute;
   align-self: center;
 }
 
-.banner .container .description span {
-  font-size: 16px;
-  line-height: 30px;
+.banner .container .description h6 {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 3rem;
   color: var(--color-blue-300);
 }
 
@@ -137,7 +143,7 @@ nav .container {
   color: var(--color-golden-300);
 
   margin: 2.5rem 0;
-  font-weight: 300;
+  /* font-weight: 300; */
 }
 
 .btn-contact-white {
@@ -146,49 +152,47 @@ nav .container {
 }
 
 .banner .container img {
+  max-width: 50vh;
+
   position: absolute;
-  max-width: 25%;
-  bottom: 0px;
-  right: 25rem;
+  bottom: 0;
+  right: 0;
 }
 
 /* --------- SECTION - ABOUT-ME --------- */
 .about-me {
+  height: 95rem;
+
   display: flex;
+  justify-content: center;
 }
 
 .about-me .brand {
   display: flex;
-  /* justify-content: center; */
 
-  position: relative;
+  position: absolute;
+  left: 0;
   width: 50rem;
-  height: 80rem;
+  height: 95rem;
   background-color: var(--color-white-600);
 }
 
 .about-me .brand img {
-  /* position: absolute;  */
   align-self: center;
   margin-left: 5rem;
-  opacity: 15%;
-}
-
-.about-me img {
-  width: 33rem;
+  opacity: 25%;
 }
 
 .about-me .container {
-  position: absolute;
-  display: flex;
-  align-items: center;
-  align-self: center;
-  left: 20%;
-  /* margin: 0 auto; */
-}
+  width: 100%;
+  max-width: 1170px;
 
-.about-me .photo-back img {
-  width: 48rem;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-areas: "description image";
+  align-items: center;
+
+  z-index: 1;
 }
 
 .about-me .description {
@@ -234,8 +238,6 @@ nav .container {
 
 /* --------- SECTION - HIGHLIGHTS --------- */
 .highlights {
-  padding: 12.5rem 0;
-
   display: flex;
   justify-content: space-around;
   background-size: cover;
@@ -243,11 +245,14 @@ nav .container {
 }
 
 .highlights .container {
-  padding: 8rem 0;
+  width: 100%;
+  max-width: 1170px;
+
+  padding: 19.2rem 0;
 
   display: grid;
-  gap: 3rem;
   grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
 }
 
 .highlights .item {
@@ -566,7 +571,7 @@ nav .container {
 
   display: grid;
   grid-template-areas: "contact social";
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 2fr 1fr;
   gap: 13rem;
   align-items: center;
 }
@@ -634,12 +639,15 @@ nav .container {
 }
 
 .social .social-card {
-  margin-bottom: 2.4rem; /* R E M O V E */
   padding: 3.5rem 1.6rem;
   display: flex;
   align-items: center;
 
   background-color: var(--color-white-700);
+}
+
+.contact-social .social-cards a:nth-child(1) {
+  margin-bottom: 2.4rem;
 }
 
 .social-card .card-icon {
