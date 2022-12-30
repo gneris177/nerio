@@ -576,19 +576,19 @@ nav .container {
   align-items: center;
 }
 
-.contact-social .contact {
+.contact-social .form-contact {
   display: flex;
   flex-direction: column;
 }
 
-.contact-social .contact h3 {
+.contact-social .form-contact h3 {
   font-family: "Playfair Display SC";
   font-size: 4.2rem;
   line-height: 5.6rem;
   color: var(--color-blue-100);
 }
 
-.contact-social .contact p {
+.contact-social .form-contact p {
   margin: 3rem 0;
   font-size: 1.4rem;
   line-height: 2.6rem;
@@ -596,20 +596,20 @@ nav .container {
   color: var(--color-black-300);
 }
 
-.contact form {
+.form-contact form {
   display: flex;
   flex-direction: column;
   gap: 1.6rem;
 }
 
-.contact .inputs {
+.form-contact .inputs {
   color: var(--color-black-300);
   padding: 1.5rem 2.4rem;
   border: 1px solid var(--color-black-400);
   resize: none;
 }
 
-.contact .btn-send-message {
+.form-contact .btn-send-message {
   color: var(--color-white-700);
   background-color: var(--color-blue-200);
 }
@@ -677,4 +677,90 @@ nav .container {
   line-height: 4.4rem;
   letter-spacing: 0.05rem;
   color: var(--color-golden-100);
+}
+
+/* --------- SECTION - INSTAGRAM --------- */
+
+/* --------- SECTION - CONTACT --------- */
+.contact {
+  display: flex;
+  justify-content: center;
+
+  background-image: url("assets/background-header.png");
+  background-size: cover;
+}
+
+.contact .container {
+  width: 100%;
+  max-width: 1170px;
+  margin-top: 10.7rem;
+  margin-bottom: 8.6rem;
+
+  display: grid;
+  grid-template-columns: 40rem 1fr 1fr;
+  gap: 11.4rem;
+}
+
+.contact .description p {
+  margin-top: 2.4rem;
+
+  font-size: 1.4rem;
+  line-height: 2.6rem;
+  letter-spacing: 0.05rem;
+  color: var(--color-white-600);
+}
+
+/* ----------------- */
+.contact .networks h4 {
+  margin-bottom: 1.6rem;
+  font-size: 2.4rem;
+  line-height: 4.4rem;
+  letter-spacing: 0.05rem;
+  color: var(--color-white-800);
+}
+
+.networks .net-links {
+  display: flex;
+  gap: 1.6rem;
+}
+
+/* ----------------- */
+.contact .forms-contact h4 {
+  margin-bottom: 1.6rem;
+  font-size: 2.4rem;
+  line-height: 4.4rem;
+  letter-spacing: 0.05rem;
+  color: var(--color-white-800);
+}
+
+.forms-contact a .description {
+  font-size: 1.6rem;
+  line-height: 3rem;
+  letter-spacing: 0.05rem;
+  color: var(--color-white-700);
+}
+
+.whatsapp-contact-card {
+  display: flex;
+  gap: 1.6rem;
+}
+
+.whatsapp-contact-card .content {
+  font-weight: 600;
+  font-size: 2.4rem;
+  line-height: 4.4rem;
+  letter-spacing: 0.05rem;
+  color: var(--color-golden-200);
+}
+
+.mail-contact-card {
+  display: flex;
+  gap: 1.6rem;
+}
+
+.mail-contact-card .content {
+  font-size: 1.4rem;
+  line-height: 2.6rem;
+  letter-spacing: 0.05rem;
+  color: var(--color-golden-200);
 }
