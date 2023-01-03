@@ -90,6 +90,7 @@ nav .container {
 }
 
 .btn-contact {
+  align-self: flex-start;
   color: var(--color-white-700);
   background-color: var(--color-blue-200);
 }
@@ -240,8 +241,8 @@ nav .container {
 .highlights {
   display: flex;
   justify-content: space-around;
-  background-size: cover;
   background: url("assets/highlight-background.png") no-repeat;
+  background-size: cover;
 }
 
 .highlights .container {
@@ -680,6 +681,13 @@ nav .container {
 }
 
 /* --------- SECTION - INSTAGRAM --------- */
+.instagram {
+  width: 100%;
+
+  height: 40rem;
+  background-image: url("assets/img-instagram.png");
+  background-size: cover;
+}
 
 /* --------- SECTION - CONTACT --------- */
 .contact {
@@ -725,8 +733,13 @@ nav .container {
 }
 
 /* ----------------- */
+.contact .forms-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
 .contact .forms-contact h4 {
-  margin-bottom: 1.6rem;
   font-size: 2.4rem;
   line-height: 4.4rem;
   letter-spacing: 0.05rem;
@@ -763,4 +776,36 @@ nav .container {
   line-height: 2.6rem;
   letter-spacing: 0.05rem;
   color: var(--color-golden-200);
+}
+
+/* --------- FOOTER --------- */
+footer {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+
+  display: flex;
+  justify-content: center;
+
+  background-image: url("assets/background-header.png");
+  background-size: cover;
+}
+
+footer .container {
+  width: 100%;
+  max-width: 1170px;
+  margin: 3.5rem 0;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer p {
+  font-size: 1.4rem;
+  line-height: 2.6rem;
+  letter-spacing: 0.05rem;
+  color: var(--color-golden-300);
+}
+
+footer p span {
+  font-weight: bold;
 }
