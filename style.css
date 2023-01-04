@@ -38,9 +38,11 @@ header {
   top: 0;
   left: 0;
   z-index: 2;
-  background: url("assets/background-header.png") no-repeat;
-  background-size: cover;
-  box-shadow: 0px 1.4rem 2.4rem rgba(0, 0, 0, 0.5);
+  background-color: #060e1e;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  /* background: url("assets/background-header.png") no-repeat; */
+  /* background-size: cover; */
+  /* box-shadow: 0px 1.4rem 2.4rem rgba(0, 0, 0, 0.5); */
 }
 
 nav {
@@ -76,6 +78,7 @@ nav .container {
 }
 
 .btn-default {
+  display: inline-block;
   cursor: pointer;
   border: none;
   padding: 1.6rem 2.4rem;
@@ -233,7 +236,7 @@ nav .container {
   color: var(--color-black-300);
 }
 
-.about-me .description button {
+.about-me .description a {
   margin-top: 2.4rem;
 }
 
@@ -625,7 +628,7 @@ nav .container {
   color: var(--color-black-100);
 }
 
-.social .social-links {
+.social .social-media {
   margin-bottom: 5rem;
   display: flex;
   gap: 1.6rem;
