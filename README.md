@@ -8,7 +8,7 @@
  </p>
 <br>
 <p align="center">
-  <img alt="Landing Page" src="./assets/PrintPage.png">
+  <img alt="Landing Page" src="./assets/PrintPage-v1.png">
 </p>
 
 <!-- <p align="center">
@@ -40,5 +40,6 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - CSS
   - FlexBox
   - Grid Layout
+- JavaScript
 
 ---
