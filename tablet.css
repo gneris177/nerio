@@ -1,0 +1,104 @@
+/* @media (min-width: 720px) and (max-width: 1024px) { */
+@media (max-width: 1024px) {
+  nav .container {
+    padding: 0 8.5rem;
+  }
+
+  .menu .btn-ct-menu {
+    display: none;
+    visibility: hidden;
+  }
+
+  .menu .side-menu {
+    display: initial;
+    visibility: visible;
+  }
+
+  .menu .links {
+    /* R E T I R A R   D E P O I S */
+    display: none;
+    visibility: hidden;
+  }
+
+  /* --------- BANNER --------- */
+  .banner .container {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "description"
+      "image";
+    grid-template-rows: 41rem auto;
+    padding: 6rem 8.5rem 0 8.5rem;
+    justify-items: center;
+  }
+
+  .banner .description {
+    grid-area: description;
+  }
+
+  .banner .description {
+    align-self: initial;
+    text-align: center;
+  }
+
+  .banner .container img {
+    grid-area: image;
+    max-width: 25vh;
+    /* width: calc(100vh - 132rem); */
+    right: initial;
+    justify-self: center;
+  }
+
+  /* --------- ABOUT-ME --------- */
+  .about-me {
+    height: initial;
+  }
+
+  .about-me .brand {
+    display: none;
+    visibility: hidden;
+  }
+
+  .about-me .container {
+    padding: 10rem 8.5rem;
+
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "description"
+      "image";
+    gap: 6rem;
+  }
+
+  .photo-black {
+    grid-area: image;
+  }
+
+  .about-me .description {
+    grid-area: description;
+  }
+
+  .about-me .description p {
+    max-width: 95%;
+  }
+
+  /* --------- HIGHLIGHTS --------- */
+  .highlights .container {
+    padding: 15.2rem 8.5rem;
+    grid-template-columns: initial;
+    grid-template-rows: repeat(3, 1fr);
+    justify-content: center;
+  }
+
+  /* D E S A T I V A N D O  S E C T I O N S  */
+  /* .about-me, */
+  /* .highlights, */
+  .expertises,
+  .depositions,
+  .whatsapp,
+  .contact-social,
+  .instagram,
+  .contact,
+  footer {
+    display: none;
+    visibility: hidden;
+  }
+}

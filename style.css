@@ -65,6 +65,11 @@ nav .container {
   align-items: center;
 }
 
+.menu .side-menu {
+  display: none;
+  visibility: hidden;
+}
+
 .links {
   display: flex;
   gap: 4rem;
@@ -121,26 +126,30 @@ nav .container {
   grid-template-areas: "description image";
 }
 
-.banner .container .description {
+/* .banner .container .description { */
+.banner .description {
   position: absolute;
   align-self: center;
 }
 
-.banner .container .description h6 {
+/* .banner .container .description h6 { */
+.banner .description h6 {
   font-weight: 400;
   font-size: 1.6rem;
   line-height: 3rem;
   color: var(--color-blue-300);
 }
 
-.banner .container .description h1 {
+/* .banner .container .description h1 { */
+.banner .description h1 {
   font-family: "Playfair Display SC";
   font-size: 5.6rem;
   line-height: 7.5rem;
   color: var(--color-golden-200);
 }
 
-.banner .container .description p {
+/* .banner .container .description p { */
+.banner .description p {
   font-size: 2rem;
   line-height: 3.2rem;
   letter-spacing: 0.05rem;
@@ -200,7 +209,7 @@ nav .container {
 }
 
 .about-me .description {
-  width: 57rem;
+  /* width: 57rem; */
 }
 
 .about-me .description .about {
@@ -225,10 +234,13 @@ nav .container {
 .about-me .description h4 {
   margin: 1.6rem 0;
   font-size: 2.4rem;
+  line-height: 4.4rem;
+  letter-spacing: 0.05rem;
   color: var(--color-black-200);
 }
 
 .about-me .description p {
+  max-width: 90%;
   margin: 0.8rem 0;
   font-size: 1.4rem;
   line-height: 2.6rem;
@@ -265,6 +277,10 @@ nav .container {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.highlights img {
+  width: 100%;
 }
 
 .highlights .item h4 {
@@ -470,12 +486,12 @@ nav .container {
   align-items: center;
 }
 
-.logo-k-depoiment {
+.logo-k-testimony {
   margin-left: -40px;
   opacity: 20%;
 }
 
-.depoiment-body {
+.testimony-body {
   width: 100rem;
 }
 
@@ -486,30 +502,31 @@ nav .container {
   color: var(--color-blue-100);
 }
 
-.depoiment {
+.testimony {
   display: flex;
   align-items: center;
   gap: 3rem;
 }
 
-.depositions .depoiment img {
-  width: 25rem;
+.depositions .testimony img {
+  width: 100%;
+  max-width: 250px;
 }
 
-.depositions .text-depoiment {
+.depositions .text-testimony {
   display: flex;
   flex-direction: column;
   margin-right: 5rem;
 }
 
-.depositions .text-depoiment p {
+.depositions .text-testimony p {
   font-size: 1.6rem;
   line-height: 3rem;
   letter-spacing: 0.05rem;
   color: var(--color-black-300);
 }
 
-.depositions .text-depoiment h5 {
+.depositions .text-testimony h5 {
   margin-top: 2rem;
   font-family: "Playfair Display SC";
   font-size: 2.2rem;
@@ -517,7 +534,7 @@ nav .container {
   color: var(--color-black-100);
 }
 
-.depoiment-body .depoiment .dots {
+.testimony-body .testimony .dots {
   width: 1rem;
 }
 
@@ -709,7 +726,7 @@ nav .container {
 
   display: grid;
   grid-template-columns: 40rem 1fr 1fr;
-  gap: 11.4rem;
+  justify-items: center;
 }
 
 .contact .description p {

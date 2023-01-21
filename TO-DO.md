@@ -1,0 +1,3 @@
+- Verificar destaque no texto do hero banner
+- Verificar tamanho da foto no hero banner
+- Verificar posição do background do highlights
