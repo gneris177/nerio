@@ -82,7 +82,7 @@ nav .container {
   text-decoration: none;
 }
 
-.btn-default {
+.btn-contact {
   display: inline-block;
   cursor: pointer;
   border: none;
@@ -92,12 +92,13 @@ nav .container {
   letter-spacing: 2.5px;
 }
 
-.btn-contact-white {
-  color: var(--color-blue-200);
-  background-color: var(--color-white-700);
+.btn-contact-transparent {
+  border: 1px solid;
+  color: var(--color-white-700);
+  background-color: transparent;
 }
 
-.btn-contact {
+.btn-contact-blue {
   align-self: flex-start;
   color: var(--color-white-700);
   background-color: var(--color-blue-200);
@@ -133,11 +134,12 @@ nav .container {
 }
 
 /* .banner .container .description h6 { */
-.banner .description h6 {
+.banner .description h5 {
   font-weight: 400;
-  font-size: 1.6rem;
-  line-height: 3rem;
-  color: var(--color-blue-300);
+  font-size: 3.2rem;
+  line-height: 5.8rem;
+  letter-spacing: 0.05rem;
+  color: var(--color-golden-300);
 }
 
 /* .banner .container .description h1 { */
@@ -156,7 +158,6 @@ nav .container {
   color: var(--color-golden-300);
 
   margin: 2.5rem 0;
-  /* font-weight: 300; */
 }
 
 .btn-contact-white {
@@ -170,6 +171,165 @@ nav .container {
   position: absolute;
   bottom: 0;
   right: 0;
+}
+
+/* --------- SECTION - EXPERTISES --------- */
+
+.expertises {
+  padding: 12rem 0;
+  background: linear-gradient(
+    180deg,
+    rgba(252, 253, 255, 1) 0%,
+    rgba(245, 246, 247, 1) 100%
+  );
+}
+
+.expertises .consumer {
+  margin-bottom: 8rem;
+
+  display: flex;
+  justify-content: center;
+  gap: 6rem;
+}
+
+.consumer-image {
+  width: 470px;
+  height: 360px;
+
+  display: flex;
+  border: 2px solid;
+
+  /* position: relative; */
+}
+
+.consumer-image img {
+  max-width: 370px;
+  max-height: 256px;
+}
+
+.consumer-image img:nth-child(1) {
+}
+
+.consumer-image img:nth-child(2) {
+  align-self: flex-end;
+  justify-self: flex-end;
+}
+
+.consumer .description {
+  max-width: 55rem;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.consumer .description img {
+  align-self: flex-start;
+  margin-bottom: 3.2rem;
+}
+
+.consumer .description span {
+  margin-bottom: 1rem;
+
+  font-size: 1.4rem;
+  letter-spacing: 4.5px;
+  color: var(--color-blue-200);
+}
+
+.consumer .description h4 {
+  margin-bottom: 0.8rem;
+
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 44px;
+  letter-spacing: 0.05rem;
+  color: var(--color-black-100);
+}
+
+.consumer .description p {
+  margin-bottom: 3rem;
+  font-size: 1.4rem;
+  line-height: 2.6rem;
+  letter-spacing: 0.05rem;
+  color: var(--color-black-300);
+}
+
+.consumer .description button {
+  align-self: flex-start;
+}
+
+/* --------- SECTION - HIGHLIGHTS --------- */
+.highlights {
+  display: flex;
+  justify-content: space-around;
+  background: url("assets/highlight-background.png") no-repeat;
+  background-size: cover;
+}
+
+.highlights .container {
+  margin: 11rem 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8rem;
+}
+
+.highlights .description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.highlights .description h6 {
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 3rem;
+  letter-spacing: 4.5px;
+  color: var(--color-blue-300);
+}
+
+.highlights .description h2 {
+  font-family: Playfair Display SC;
+  font-size: 4.2rem;
+  color: var(--color-white-800);
+}
+
+.highlights .itens {
+  width: 100%;
+  max-width: 1170px;
+
+  /* padding: 19.2rem 0; */
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+}
+
+.highlights .item {
+  max-width: 37rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.highlights img {
+  width: 100%;
+}
+
+.highlights .item h4 {
+  font-size: 2.4rem;
+  line-height: 4.4rem;
+  margin: 3.2rem 0 1.6rem 0;
+  color: var(--color-white-800);
+}
+
+.highlights .item p {
+  font-size: 1.6rem;
+  line-height: 3rem;
+  text-align: center;
+  letter-spacing: 0.05rem;
+  color: var(--color-white-600);
 }
 
 /* --------- SECTION - ABOUT-ME --------- */
@@ -250,113 +410,6 @@ nav .container {
 
 .about-me .description a {
   margin-top: 2.4rem;
-}
-
-/* --------- SECTION - HIGHLIGHTS --------- */
-.highlights {
-  display: flex;
-  justify-content: space-around;
-  background: url("assets/highlight-background.png") no-repeat;
-  background-size: cover;
-}
-
-.highlights .container {
-  width: 100%;
-  max-width: 1170px;
-
-  padding: 19.2rem 0;
-
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 3rem;
-}
-
-.highlights .item {
-  max-width: 37rem;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.highlights img {
-  width: 100%;
-}
-
-.highlights .item h4 {
-  font-size: 2.4rem;
-  line-height: 4.4rem;
-  margin: 1.6rem 0;
-  color: var(--color-white-800);
-}
-
-.highlights .item p {
-  font-size: 1.6rem;
-  line-height: 3rem;
-  text-align: center;
-  letter-spacing: 0.05rem;
-  color: var(--color-white-600);
-}
-
-/* --------- SECTION - EXPERTISES --------- */
-
-.expertises {
-  padding: 12rem 0;
-  background: linear-gradient(
-    180deg,
-    rgba(252, 253, 255, 1) 0%,
-    rgba(245, 246, 247, 1) 100%
-  );
-}
-
-.expertises .consumer {
-  margin-bottom: 8rem;
-
-  display: flex;
-  justify-content: center;
-  gap: 6rem;
-}
-
-.consumer .description {
-  max-width: 55rem;
-
-  display: flex;
-  flex-direction: column;
-}
-
-.consumer .description img {
-  align-self: flex-start;
-  margin-bottom: 3.2rem;
-}
-
-.consumer .description span {
-  margin-bottom: 1rem;
-
-  font-size: 1.4rem;
-  letter-spacing: 4.5px;
-  color: var(--color-blue-200);
-}
-
-.consumer .description h4 {
-  margin-bottom: 0.8rem;
-
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 44px;
-  letter-spacing: 0.05rem;
-  color: var(--color-black-100);
-}
-
-.consumer .description p {
-  margin-bottom: 3rem;
-  font-size: 1.4rem;
-  line-height: 2.6rem;
-  letter-spacing: 0.05rem;
-  color: var(--color-black-300);
-}
-
-.consumer .description button {
-  align-self: flex-start;
 }
 
 /* ----- DIV - AREAS-EXPERTISE ----- */
@@ -440,6 +493,27 @@ nav .container {
 
   display: flex;
   flex-direction: column;
+}
+
+.family-right-image {
+  width: 470px;
+  height: 360px;
+
+  display: flex;
+  border: 2px solid;
+}
+
+.family-right-image img {
+  max-width: 370px;
+  max-height: 256px;
+}
+
+.family-right-image img:nth-child(1) {
+}
+
+.family-right-image img:nth-child(2) {
+  align-self: flex-end;
+  justify-self: flex-end;
 }
 
 .family-right .description img {
@@ -580,7 +654,7 @@ nav .container {
 }
 
 /* --------- SECTION - CONTACT --------- */
-.contact-social {
+/* .contact-social {
   display: flex;
   justify-content: center;
 }
@@ -633,7 +707,7 @@ nav .container {
 .form-contact .btn-send-message {
   color: var(--color-white-700);
   background-color: var(--color-blue-200);
-}
+} */
 
 /* ---------- */
 
@@ -698,15 +772,6 @@ nav .container {
   line-height: 4.4rem;
   letter-spacing: 0.05rem;
   color: var(--color-golden-100);
-}
-
-/* --------- SECTION - INSTAGRAM --------- */
-.instagram {
-  width: 100%;
-
-  height: 40rem;
-  background-image: url("assets/img-instagram.png");
-  background-size: cover;
 }
 
 /* --------- SECTION - CONTACT --------- */
