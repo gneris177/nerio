@@ -196,10 +196,7 @@ nav .container {
   width: 470px;
   height: 360px;
 
-  display: flex;
-  border: 2px solid;
-
-  /* position: relative; */
+  display: grid;
 }
 
 .consumer-image img {
@@ -208,11 +205,13 @@ nav .container {
 }
 
 .consumer-image img:nth-child(1) {
+  z-index: 1;
 }
 
 .consumer-image img:nth-child(2) {
+  position: absolute;
   align-self: flex-end;
-  justify-self: flex-end;
+  justify-self: right;
 }
 
 .consumer .description {
@@ -338,6 +337,8 @@ nav .container {
 
   display: flex;
   justify-content: center;
+
+  background-color: var(--color-white-700);
 }
 
 .about-me .brand {
@@ -345,7 +346,8 @@ nav .container {
 
   position: absolute;
   left: 0;
-  width: 50rem;
+  /* width: 50rem; */
+  width: 60rem;
   height: 95rem;
   background-color: var(--color-white-600);
 }
@@ -499,8 +501,7 @@ nav .container {
   width: 470px;
   height: 360px;
 
-  display: flex;
-  border: 2px solid;
+  display: grid;
 }
 
 .family-right-image img {
@@ -509,11 +510,13 @@ nav .container {
 }
 
 .family-right-image img:nth-child(1) {
+  z-index: 1;
 }
 
 .family-right-image img:nth-child(2) {
+  position: absolute;
   align-self: flex-end;
-  justify-self: flex-end;
+  justify-self: right;
 }
 
 .family-right .description img {
@@ -556,17 +559,68 @@ nav .container {
 }
 
 .depositions .container {
+  min-height: 54.5rem;
+
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .logo-k-testimony {
   margin-left: -40px;
   opacity: 20%;
+
+  position: absolute;
 }
 
 .testimony-body {
-  width: 100rem;
+  /* width: 100rem; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.testimony-item {
+  width: 370px;
+  height: 333px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.testimony-item img {
+  width: 137.314px;
+  height: 133.5px;
+}
+
+.testimony .witness-name {
+  margin: 0.8rem 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.testimony-item h5 {
+  font-family: "Playfair Display SC";
+  font-size: 2.2rem;
+}
+
+.testimony-item h6 {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 3rem;
+  letter-spacing: 0.05rem;
+  color: var(--color-black-300);
+}
+
+.testimony-item p {
+  text-align: center;
+  font-size: 1.6rem;
+  line-height: 3rem;
+  letter-spacing: 0.05rem;
+  color: var(--color-black-300);
 }
 
 .depositions .container h3 {
@@ -582,10 +636,10 @@ nav .container {
   gap: 3rem;
 }
 
-.depositions .testimony img {
+/* .depositions .testimony img {
   width: 100%;
   max-width: 250px;
-}
+} */
 
 .depositions .text-testimony {
   display: flex;
@@ -627,6 +681,7 @@ nav .container {
   gap: 3.6rem;
   background: url("assets/background-whatsapp.png");
   background-position: center;
+  background-size: cover;
 }
 
 .whatsapp .container h3 {
@@ -893,4 +948,11 @@ footer p {
 
 footer p span {
   font-weight: bold;
+}
+
+/* ---------------- MEDIA SCREENS TABLET ---------------- */
+@media (min-width: 1024px) and (max-width: 1440px) {
+  .about-me .brand {
+    width: 47rem;
+  }
 }

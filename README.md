@@ -8,7 +8,7 @@
  </p>
 <br>
 <p align="center">
-  <img alt="Landing Page" src="./assets/PrintPage-v1.png">
+  <img alt="Landing Page" src="./assets/PrintPage-v1.1.png">
 </p>
 
 <!-- <p align="center">
