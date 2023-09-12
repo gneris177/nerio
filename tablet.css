@@ -48,6 +48,49 @@
     justify-self: center;
   }
 
+  /* --------- EXPERTISES --------- */
+  .expertises .consumer {
+    margin: 0 11rem;
+    flex-direction: column-reverse;
+  }
+
+  .title-areas-expertise .highlight-line {
+    width: 9rem;
+  }
+
+  .areas-expertise .items-expertise {
+    margin: 0 11rem;
+    max-width: initial;
+    grid-template-columns: 1fr;
+  }
+
+  .expertises .family-right {
+    margin: 0 11rem;
+    flex-direction: column;
+  }
+
+  .expertises .separator-line {
+    margin: 3.4rem 0 6.4rem 0;
+  }
+
+  /* --------- HIGHLIGHTS --------- */
+  .highlights {
+    background-position: -2660px;
+  }
+
+  .highlights .container {
+    margin: 9rem 0;
+    /* padding: 0 5rem; */
+    grid-template-columns: initial;
+    grid-template-rows: repeat(3, 1fr);
+    justify-content: center;
+  }
+
+  .highlights .itens {
+    gap: 8rem;
+    grid-template-columns: 1fr;
+  }
+
   /* --------- ABOUT-ME --------- */
   .about-me {
     height: initial;
@@ -59,13 +102,13 @@
   }
 
   .about-me .container {
-    padding: 10rem 8.5rem;
+    padding: 10rem 10.7rem 2rem 10.7rem;
 
     grid-template-columns: 1fr;
     grid-template-areas:
       "description"
       "image";
-    gap: 6rem;
+    gap: 3rem;
   }
 
   .photo-black {
@@ -80,22 +123,13 @@
     max-width: 95%;
   }
 
-  /* --------- HIGHLIGHTS --------- */
-  .highlights .container {
-    padding: 15.2rem 8.5rem;
-    grid-template-columns: initial;
-    grid-template-rows: repeat(3, 1fr);
-    justify-content: center;
-  }
-
   /* D E S A T I V A N D O  S E C T I O N S  */
-  /* .about-me, */
+  /* .banner, */
+  /* .expertises, */
   /* .highlights, */
-  .expertises,
+  /* .about-me, */
   .depositions,
   .whatsapp,
-  .contact-social,
-  .instagram,
   .contact,
   footer {
     display: none;

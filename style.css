@@ -380,10 +380,6 @@ nav .container {
   color: var(--color-blue-200);
 }
 
-.about-me .description .name {
-  color: var(--color-black-100);
-}
-
 .check-paragraph {
   display: flex;
 }
@@ -393,7 +389,13 @@ nav .container {
   margin: 1rem;
 }
 
-.about-me .description h4 {
+.about-me .name {
+  font-family: "Playfair Display SC";
+  font-size: 4.2rem;
+  color: var(--color-black-100);
+}
+
+.about-me .description h5 {
   margin: 1.6rem 0;
   font-size: 2.4rem;
   line-height: 4.4rem;
@@ -484,7 +486,7 @@ nav .container {
 }
 
 /* ----- DIV - FAMILY-RIGHT ----- */
-.family-right {
+.expertises .family-right {
   display: flex;
   justify-content: center;
   gap: 6rem;
