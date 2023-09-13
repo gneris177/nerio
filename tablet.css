@@ -160,6 +160,8 @@
   }
 
   .testimony .dots {
+    display: initial;
+    visibility: visible;
     transform: rotate(270deg); /* TEMPORARY */
   }
 
@@ -174,6 +176,39 @@
     font-size: 2.4rem;
   }
 
+  /* --------- CONTACT --------- */
+  .contact .container {
+    margin: 8rem 11.5rem;
+
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "forms-contact"
+      "networks"
+      "description";
+    gap: 4.8rem;
+    justify-items: flex-start;
+  }
+
+  .contact .forms-contact {
+    grid-area: forms-contact;
+  }
+
+  .contact .networks {
+    grid-area: networks;
+  }
+
+  .contact .description {
+    grid-area: description;
+  }
+
+  .contact .description p {
+    max-width: 40rem;
+  }
+
+  footer .container {
+    margin: 2.5rem 11.5rem;
+  }
+
   /* D E S A T I V A N D O  S E C T I O N S  */
   /* .banner, */
   /* .expertises, */
@@ -181,9 +216,9 @@
   /* .about-me, */
   /* .depositions, */
   /* .whatsapp, */
-  .contact,
-  footer {
+  /* .contact, */
+  /* footer {
     display: none;
     visibility: hidden;
-  }
+  } */
 }
