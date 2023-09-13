@@ -1,3 +1,10 @@
+/* ---------------- MEDIA SCREENS TABLET ---------------- */
+@media (min-width: 1024px) and (max-width: 1440px) {
+  .about-me .brand {
+    width: 47rem;
+  }
+}
+
 /* @media (min-width: 720px) and (max-width: 1024px) { */
 @media (max-width: 1024px) {
   nav .container {
@@ -55,7 +62,7 @@
   }
 
   .title-areas-expertise .highlight-line {
-    width: 9rem;
+    width: 9.5rem;
   }
 
   .areas-expertise .items-expertise {
@@ -123,13 +130,57 @@
     max-width: 95%;
   }
 
+  /* --------- DEPOSITIONS --------- */
+  .depositions {
+    margin-top: 7.3rem;
+  }
+
+  .logo-k-testimony {
+    display: none;
+    visibility: hidden;
+  }
+
+  .testimony {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .testimony-item {
+    width: 56rem;
+    height: auto;
+  }
+
+  .testimony-item:nth-child(2),
+  .testimony-item:nth-child(3) {
+    /* TEMPORARY */
+    /* Desativar quando for fazer a 
+    passagem automática através de JS */
+    display: none;
+    visibility: hidden;
+  }
+
+  .testimony .dots {
+    transform: rotate(270deg); /* TEMPORARY */
+  }
+
+  /* --------- WHATSAPP --------- */
+  .whatsapp .container {
+    padding: 0 11.5rem;
+    background-position: right;
+  }
+
+  .whatsapp .container h3 {
+    width: auto;
+    font-size: 2.4rem;
+  }
+
   /* D E S A T I V A N D O  S E C T I O N S  */
   /* .banner, */
   /* .expertises, */
   /* .highlights, */
   /* .about-me, */
-  .depositions,
-  .whatsapp,
+  /* .depositions, */
+  /* .whatsapp, */
   .contact,
   footer {
     display: none;

@@ -22,13 +22,11 @@
 Landing Page para cliente advogado tendo como principais partes:
 
 - Apresentação com foto
-- Sobre mim
-- Destaques
 - Áreas de atuação
+- Destaques
+- Sobre mim
 - Depoimentos de clientes
 - Contato por WhatsApp
-- Contato por e-mail
-- Feed do Instagram
 
 <br>
 

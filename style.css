@@ -583,8 +583,8 @@ nav .container {
 }
 
 .testimony-item {
-  width: 370px;
-  height: 333px;
+  width: 37rem;
+  height: 33.3rem;
 
   display: flex;
   flex-direction: column;
@@ -950,11 +950,4 @@ footer p {
 
 footer p span {
   font-weight: bold;
-}
-
-/* ---------------- MEDIA SCREENS TABLET ---------------- */
-@media (min-width: 1024px) and (max-width: 1440px) {
-  .about-me .brand {
-    width: 47rem;
-  }
 }
