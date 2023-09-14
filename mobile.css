@@ -1,0 +1,148 @@
+/* ---------------- MEDIA SCREENS MOBILE ---------------- */
+@media (max-width: 1024px) {
+  nav .container {
+    padding: 0 2.2rem;
+  }
+
+  nav a img {
+    max-width: 110px;
+  }
+
+  nav .menu img {
+    max-width: 19px;
+  }
+
+  /* --------- BANNER --------- */
+  .banner {
+    min-height: auto;
+  }
+
+  .banner .container {
+    padding: 7rem 2.2rem 0 2.2rem;
+    grid-template-rows: 46rem 57rem;
+    gap: 7rem;
+  }
+
+  .banner .description h1 {
+    font-size: 4rem;
+    line-height: normal;
+  }
+
+  .banner .description p {
+    font-size: 1.6rem;
+  }
+
+  .banner .container img {
+    max-width: 45vh;
+  }
+
+  /* --------- EXPERTISES --------- */
+  .expertises {
+    margin: 0;
+    padding: 8.6rem 2.2rem 6.4rem 2.2rem;
+  }
+
+  .expertises .consumer {
+    margin: 0 0 6.4rem 0;
+  }
+
+  .consumer-image,
+  .family-right-image,
+  .title-areas-expertise .highlight-line {
+    display: none;
+    visibility: hidden;
+  }
+
+  .areas-expertise .items-expertise,
+  .item-expertise img,
+  .expertises .family-right {
+    margin: 0;
+  }
+
+  .expertises .separator-line {
+    margin: 6.4rem 0;
+  }
+
+  /* --------- HIGHLIGHTS --------- */
+  .highlights {
+    padding: 0 3.4rem;
+  }
+
+  .highlights .itens {
+    padding: 0 1.9rem;
+  }
+
+  /* --------- ABOUT-ME --------- */
+  .about-me .container {
+    padding: 5.3rem 2.2rem 7.2rem 2.2rem;
+  }
+
+  .about-me .name {
+    font-size: 3.2rem;
+  }
+
+  .about-me .description p {
+    max-width: none;
+  }
+
+  .photo-black img {
+    max-width: 340px;
+  }
+
+  /* --------- DEPOSITIONS --------- */
+  .depositions .container {
+    padding: 0 2.3rem;
+  }
+
+  .depositions .container h3 {
+    text-align: center;
+  }
+
+  .testimony-item {
+    width: auto;
+  }
+
+  /* --------- WHATSAPP --------- */
+  .whatsapp .container {
+    padding: 9rem 0;
+    height: auto;
+  }
+
+  .whatsapp .container h3 {
+    padding: 0 4rem;
+    font-size: 2rem;
+    line-height: 3.2rem;
+  }
+
+  /* --------- CONTACT --------- */
+  .contact .container {
+    margin: 0;
+    padding: 9rem 2.3rem;
+  }
+
+  /* --------- FOOTER --------- */
+  footer .container {
+    margin: 0;
+    padding: 2.8rem;
+
+    flex-direction: column-reverse;
+    gap: 1.6rem;
+  }
+
+  footer p {
+    text-align: center;
+  }
+}
+
+/* D E S A T I V A N D O  S E C T I O N S  */
+/* .banner, */
+/* .expertises, */
+/* .highlights, */
+/* .about-me, */
+/* .depositions, */
+/* .whatsapp, */
+/* .contact, */
+/* footer {
+  display: none;
+  visibility: hidden;
+} */
