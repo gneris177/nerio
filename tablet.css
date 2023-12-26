@@ -1,12 +1,6 @@
 /* ---------------- MEDIA SCREENS TABLET ---------------- */
-@media (min-width: 1024px) and (max-width: 1440px) {
-  .about-me .brand {
-    width: 47rem;
-  }
-}
-
-/* @media (min-width: 720px) and (max-width: 1024px) { */
-@media (max-width: 1024px) {
+@media only screen and (max-width: 1024px) {
+  /* @media (max-width: 768px) { */
   nav .container {
     padding: 0 8.5rem;
   }
@@ -21,19 +15,13 @@
     visibility: visible;
   }
 
-  .menu .links {
-    /* R E T I R A R   D E P O I S */
-    display: none;
-    visibility: hidden;
-  }
-
   /* --------- BANNER --------- */
   .banner .container {
     grid-template-columns: 1fr;
     grid-template-areas:
       "description"
       "image";
-    grid-template-rows: 41rem auto;
+    grid-template-rows: 41rem 41rem;
     padding: 6rem 8.5rem 0 8.5rem;
     justify-items: center;
   }
@@ -49,7 +37,7 @@
 
   .banner .container img {
     grid-area: image;
-    max-width: 25vh;
+    max-width: 30vh;
     /* width: calc(100vh - 132rem); */
     right: initial;
     justify-self: center;

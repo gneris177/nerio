@@ -13,6 +13,7 @@
   --color-golden-100: #543d1d;
   --color-golden-200: #ffce8c;
   --color-golden-300: #f5efe6;
+  --color-separator-menu: #8593ae;
 }
 
 * {
@@ -40,16 +41,13 @@ header {
   z-index: 2;
   background-color: #060e1e;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-  /* background: url("assets/background-header.png") no-repeat; */
-  /* background-size: cover; */
-  /* box-shadow: 0px 1.4rem 2.4rem rgba(0, 0, 0, 0.5); */
 }
 
 nav {
-  padding: 1.5rem 0;
-
   display: flex;
   justify-content: center;
+
+  height: 70px;
 }
 
 nav .container {
@@ -70,16 +68,51 @@ nav .container {
   visibility: hidden;
 }
 
-.links {
+.links .separator-menu {
+  display: none;
+  visibility: hidden;
+}
+
+.links .buttons {
   display: flex;
   gap: 4rem;
   margin-right: 3rem;
 }
 
-.links a {
+.links .buttons a {
   color: var(--color-white-800);
   font-size: 1.6rem;
   text-decoration: none;
+}
+
+.links .contact-menu {
+  display: none;
+  visibility: hidden;
+}
+
+.links .contact-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.links .contact-menu p {
+  width: 80%;
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 3.6rem;
+  letter-spacing: 0.5px;
+  color: white;
+}
+
+.links .contact-menu h3 {
+  font-size: 3.2rem;
+  line-height: 5.9rem;
+  color: var(--color-golden-200);
+}
+
+.contact-menu a {
+  align-self: flex-start;
 }
 
 .btn-contact {
@@ -127,13 +160,11 @@ nav .container {
   grid-template-areas: "description image";
 }
 
-/* .banner .container .description { */
 .banner .description {
   position: absolute;
   align-self: center;
 }
 
-/* .banner .container .description h6 { */
 .banner .description h5 {
   font-weight: 400;
   font-size: 3.2rem;
@@ -142,7 +173,6 @@ nav .container {
   color: var(--color-golden-300);
 }
 
-/* .banner .container .description h1 { */
 .banner .description h1 {
   font-family: "Playfair Display SC";
   font-size: 5.6rem;
@@ -150,7 +180,6 @@ nav .container {
   color: var(--color-golden-200);
 }
 
-/* .banner .container .description p { */
 .banner .description p {
   font-size: 2rem;
   line-height: 3.2rem;
@@ -174,7 +203,6 @@ nav .container {
 }
 
 /* --------- SECTION - EXPERTISES --------- */
-
 .expertises {
   padding: 12rem 0;
   background: linear-gradient(
@@ -297,8 +325,6 @@ nav .container {
   width: 100%;
   max-width: 1170px;
 
-  /* padding: 19.2rem 0; */
-
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 3rem;
@@ -347,8 +373,7 @@ nav .container {
 
   position: absolute;
   left: 0;
-  /* width: 50rem; */
-  width: 60rem;
+  width: 30vw;
   height: 95rem;
   background-color: var(--color-white-600);
 }
@@ -367,12 +392,9 @@ nav .container {
   grid-template-columns: 1fr 2fr;
   grid-template-areas: "description image";
   align-items: center;
+  gap: 6rem;
 
   z-index: 1;
-}
-
-.about-me .description {
-  /* width: 57rem; */
 }
 
 .about-me .description .about {
@@ -417,6 +439,14 @@ nav .container {
   margin-top: 2.4rem;
 }
 
+.photo-black img {
+  /* max-width: 340px; */
+
+  width: auto;
+  height: auto;
+  max-width: 40vw;
+}
+
 /* ----- DIV - AREAS-EXPERTISE ----- */
 .areas-expertise {
   display: flex;
@@ -432,7 +462,7 @@ nav .container {
 }
 
 .title-areas-expertise .highlight-line {
-  width: 45rem;
+  width: 23vw;
   height: 0.2rem;
   background: linear-gradient(
     90deg,
@@ -462,11 +492,6 @@ nav .container {
   align-items: center;
   gap: 1.6rem;
 }
-
-/* .item-expertise img {
-  width: 2.4rem;
-  margin: 1rem;
-} */
 
 .item-expertise p {
   font-size: 1.6rem;
@@ -558,7 +583,6 @@ nav .container {
 
 /* --------- SECTION - DEPOSITIONS --------- */
 .depositions {
-  /* height: 60rem; */
   background: url("assets/background-depositions.svg");
 }
 
@@ -578,14 +602,13 @@ nav .container {
 }
 
 .testimony-body {
-  /* width: 100rem; */
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .testimony-item {
-  width: 37rem;
+  max-width: 37rem;
   height: 33.3rem;
 
   display: flex;
@@ -640,11 +663,6 @@ nav .container {
   gap: 3rem;
 }
 
-/* .depositions .testimony img {
-  width: 100%;
-  max-width: 250px;
-} */
-
 .depositions .text-testimony {
   display: flex;
   flex-direction: column;
@@ -665,10 +683,6 @@ nav .container {
   line-height: 2.9rem;
   color: var(--color-black-100);
 }
-
-/* .testimony-body .testimony .dots {
-  width: 1rem;
-} */
 
 .testimony .dots {
   display: none;
@@ -718,63 +732,6 @@ nav .container {
 }
 
 /* --------- SECTION - CONTACT --------- */
-/* .contact-social {
-  display: flex;
-  justify-content: center;
-}
-
-.contact-social .container {
-  width: 100%;
-  max-width: 1170px;
-  padding: 12rem 0;
-
-  display: grid;
-  grid-template-areas: "contact social";
-  grid-template-columns: 2fr 1fr;
-  gap: 13rem;
-  align-items: center;
-}
-
-.contact-social .form-contact {
-  display: flex;
-  flex-direction: column;
-}
-
-.contact-social .form-contact h3 {
-  font-family: "Playfair Display SC";
-  font-size: 4.2rem;
-  line-height: 5.6rem;
-  color: var(--color-blue-100);
-}
-
-.contact-social .form-contact p {
-  margin: 3rem 0;
-  font-size: 1.4rem;
-  line-height: 2.6rem;
-  letter-spacing: 0.05rem;
-  color: var(--color-black-300);
-}
-
-.form-contact form {
-  display: flex;
-  flex-direction: column;
-  gap: 1.6rem;
-}
-
-.form-contact .inputs {
-  color: var(--color-black-300);
-  padding: 1.5rem 2.4rem;
-  border: 1px solid var(--color-black-400);
-  resize: none;
-}
-
-.form-contact .btn-send-message {
-  color: var(--color-white-700);
-  background-color: var(--color-blue-200);
-} */
-
-/* ---------- */
-
 .social h4 {
   margin-bottom: 1.7rem;
   font-size: 2.4rem;
@@ -957,4 +914,55 @@ footer p {
 
 footer p span {
   font-weight: bold;
+}
+
+/* --------------- AJUSTES DO MENU INTERATIVO --------------- */
+@media screen and (max-width: 1024px) {
+  .banner .container {
+    padding: 0;
+  }
+
+  .menu .links.sideMenuActive {
+    right: 0;
+  }
+
+  .menu .links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 3.2rem 11.5rem;
+
+    position: fixed;
+    box-sizing: border-box;
+    width: 100vw;
+    height: calc(100vh - 70px);
+    top: 70px;
+    right: -2000px;
+    transition: all 0.5s;
+    background-color: var(--color-blue-100);
+    z-index: 2;
+  }
+
+  .links .buttons {
+    flex-direction: column;
+    margin: 0;
+    gap: 0;
+  }
+
+  .links .buttons a {
+    font-size: 2rem;
+    line-height: 3.2rem;
+    padding: 3.2rem 0;
+  }
+
+  .links .buttons a:nth-child(2) {
+    border: 1px solid var(--color-separator-menu);
+    border-left: none;
+    border-right: none;
+  }
+
+  .links .contact-menu {
+    display: flex;
+    visibility: visible;
+  }
 }
