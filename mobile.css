@@ -16,36 +16,14 @@
   }
 
   nav .menu img {
-    max-width: 19px;
+    max-width: 32px;
   }
 
   .menu .links {
     padding: 1.5rem 3.2rem;
   }
 
-  /* --------- BANNER --------- */
-  .banner {
-    min-height: auto;
-  }
-
-  .banner .container {
-    padding: 7rem 2.2rem 0 2.2rem;
-    grid-template-rows: 46rem 57rem;
-    gap: 7rem;
-  }
-
-  .banner .description h1 {
-    font-size: 4rem;
-    line-height: normal;
-  }
-
-  .banner .description p {
-    font-size: 1.6rem;
-  }
-
-  .banner .container img {
-    max-width: 45vh;
-  }
+ 
 
   /* --------- EXPERTISES --------- */
   .expertises {

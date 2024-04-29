@@ -33,6 +33,14 @@ a {
 }
 
 /* --------- HEADER --------- */
+
+.logo {
+  width: 60px;
+  height: 60px;
+  border: 2px solid var(--color-golden-200);
+  border-radius: 50%;
+}
+
 header {
   width: 100%;
   position: fixed;
@@ -52,7 +60,9 @@ nav {
 
 nav .container {
   width: 100%;
-  max-width: 1170px;
+  max-width: 1210px;
+  padding-left: 20px;
+  padding-right: 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -142,51 +152,71 @@ nav .container {
 .banner {
   position: relative;
   padding-top: 8rem;
-  min-height: 100vh;
-  background: url("assets/background.png") no-repeat;
+  height: 100vh;
+  background: url("assets/background.jpg") no-repeat;
   background-size: cover;
-
+  background-position: center;
   display: flex;
   justify-content: center;
 }
 
+.banner-opacity {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgb(6 14 30 / 80%);
+}
+
 .banner .container {
   position: relative;
-
+  max-width: 1140px;
+  padding-left: 20px;
+  padding-right: 20px;
   width: 100%;
   max-width: 1170px;
-  display: grid;
-  grid-template-columns: 3fr 2fr;
-  grid-template-areas: "description image";
 }
 
 .banner .description {
-  position: absolute;
-  align-self: center;
-}
-
-.banner .description h5 {
-  font-weight: 400;
-  font-size: 3.2rem;
-  line-height: 5.8rem;
-  letter-spacing: 0.05rem;
-  color: var(--color-golden-300);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
 
 .banner .description h1 {
-  font-family: "Playfair Display SC";
-  font-size: 5.6rem;
-  line-height: 7.5rem;
+  text-transform: uppercase;
+  font-family: "Montserrat", Sans-serif;
+  text-align: center;
+  font-size: 7rem;
   color: var(--color-golden-200);
+  font-weight: 800;
+  line-height: 1.1em;
+}
+@media (max-width: 1024px) {
+  .banner .description h1 {
+    font-size: 6rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .banner .description h1 {
+    font-size: 5rem;
+  }
 }
 
 .banner .description p {
-  font-size: 2rem;
-  line-height: 3.2rem;
-  letter-spacing: 0.05rem;
-  color: var(--color-golden-300);
-
-  margin: 2.5rem 0;
+  font-size: 14px;
+  font-family: "Open Sans", Sans-serif;
+  font-weight: 400;  
+  color: #FFFFFF;
+  margin-top: .4rem;
+  margin-bottom: .9rem;
+  text-align: center;
 }
 
 .btn-contact-white {
@@ -579,114 +609,6 @@ nav .container {
 
 .family-right .description button {
   align-self: flex-start;
-}
-
-/* --------- SECTION - DEPOSITIONS --------- */
-.depositions {
-  background: url("assets/background-depositions.svg");
-}
-
-.depositions .container {
-  min-height: 54.5rem;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.logo-k-testimony {
-  margin-left: -40px;
-  opacity: 20%;
-
-  position: absolute;
-}
-
-.testimony-body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.testimony-item {
-  max-width: 37rem;
-  height: 33.3rem;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.testimony-item img {
-  width: 137.314px;
-  height: 133.5px;
-}
-
-.testimony .witness-name {
-  margin: 0.8rem 0;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.testimony-item h5 {
-  font-family: "Playfair Display SC";
-  font-size: 2.2rem;
-}
-
-.testimony-item h6 {
-  font-size: 1.6rem;
-  font-weight: 400;
-  line-height: 3rem;
-  letter-spacing: 0.05rem;
-  color: var(--color-black-300);
-}
-
-.testimony-item p {
-  text-align: center;
-  font-size: 1.6rem;
-  line-height: 3rem;
-  letter-spacing: 0.05rem;
-  color: var(--color-black-300);
-}
-
-.depositions .container h3 {
-  font-family: "Playfair Display SC";
-  font-size: 4.2rem;
-  margin-bottom: 5.6rem;
-  color: var(--color-blue-100);
-}
-
-.testimony {
-  display: flex;
-  align-items: center;
-  gap: 3rem;
-}
-
-.depositions .text-testimony {
-  display: flex;
-  flex-direction: column;
-  margin-right: 5rem;
-}
-
-.depositions .text-testimony p {
-  font-size: 1.6rem;
-  line-height: 3rem;
-  letter-spacing: 0.05rem;
-  color: var(--color-black-300);
-}
-
-.depositions .text-testimony h5 {
-  margin-top: 2rem;
-  font-family: "Playfair Display SC";
-  font-size: 2.2rem;
-  line-height: 2.9rem;
-  color: var(--color-black-100);
-}
-
-.testimony .dots {
-  display: none;
-  visibility: hidden;
 }
 
 /* --------- SECTION - WHATSAPP --------- */

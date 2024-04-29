@@ -2,7 +2,10 @@
 @media only screen and (max-width: 1024px) {
   /* @media (max-width: 768px) { */
   nav .container {
-    padding: 0 8.5rem;
+    max-width: 1140px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   .menu .btn-ct-menu {
@@ -15,33 +18,6 @@
     visibility: visible;
   }
 
-  /* --------- BANNER --------- */
-  .banner .container {
-    grid-template-columns: 1fr;
-    grid-template-areas:
-      "description"
-      "image";
-    grid-template-rows: 41rem 41rem;
-    padding: 6rem 8.5rem 0 8.5rem;
-    justify-items: center;
-  }
-
-  .banner .description {
-    grid-area: description;
-  }
-
-  .banner .description {
-    align-self: initial;
-    text-align: center;
-  }
-
-  .banner .container img {
-    grid-area: image;
-    max-width: 30vh;
-    /* width: calc(100vh - 132rem); */
-    right: initial;
-    justify-self: center;
-  }
 
   /* --------- EXPERTISES --------- */
   .expertises .consumer {

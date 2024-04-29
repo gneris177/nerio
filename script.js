@@ -12,7 +12,6 @@ function mappingElements() {
   elements.menu = body.querySelector(".menu .links");
   elements.logoIcon = body.querySelector("nav a img");
   elements.copyRightsYear = body.querySelector("footer .copyrights-year");
-  console.log(elements.menuIcon);
 }
 
 function removeSideMenuAfterClick() {
