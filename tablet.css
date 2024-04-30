@@ -1,0 +1,133 @@
+/* ---------------- MEDIA SCREENS TABLET ---------------- */
+@media only screen and (max-width: 1024px) {
+  /* @media (max-width: 768px) { */
+  nav .container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .menu .btn-ct-menu {
+    display: none;
+    visibility: hidden;
+  }
+
+  .menu .side-menu {
+    display: initial;
+    visibility: visible;
+  }
+
+
+  /* --------- EXPERTISES --------- */
+  .expertises .consumer {
+    margin: 0 40px;
+    flex-direction: column-reverse;
+  }
+
+  .title-areas-expertise .highlight-line {
+    width: 9.5rem;
+  }
+
+  .areas-expertise .items-expertise {
+    margin: 0 40px;
+    max-width: initial;
+    grid-template-columns: 1fr;
+  }
+
+  .expertises .family-right {
+    margin: 0 40px;
+    flex-direction: column;
+  }
+
+  .expertises .separator-line {
+    margin: 3.4rem 0 6.4rem 0;
+  }
+
+  /* --------- HIGHLIGHTS --------- */
+  .highlights {
+    background-position: -2660px;
+  }
+
+  .highlights .container {
+    margin: 9rem 0;
+    /* padding: 0 5rem; */
+    grid-template-columns: initial;
+    grid-template-rows: repeat(3, 1fr);
+    justify-content: center;
+  }
+
+  .highlights .itens {
+    gap: 8rem;
+    grid-template-columns: 1fr;
+  }
+
+  /* --------- ABOUT-ME --------- */
+  .about-me {
+    height: initial;
+  }
+
+  .about-me .brand {
+    display: none;
+    visibility: hidden;
+  }
+
+  .about-me .container {
+    padding: 10rem 0 2rem 0;
+    display: flex;
+    gap: 3rem;
+  }
+  @media (max-width: 1024px) {
+    .about-me .container {
+      flex-direction: column;
+      align-items: center;
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+
+    .photo-black {
+      grid-area: image;
+    } 
+  
+  }
+
+  .about-me .description {
+    grid-area: description;
+  }
+
+  .about-me .description p {
+    max-width: 95%;
+  }
+
+  /* --------- CONTACT --------- */
+  .contact .container {
+    margin: 8rem 40px;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "forms-contact"
+      "networks"
+      "description";
+    gap: 4.8rem;
+    justify-items: flex-start;
+  }
+
+  .contact .forms-contact {
+    grid-area: forms-contact;
+  }
+
+  .contact .networks {
+    grid-area: networks;
+  }
+
+  .contact .description {
+    grid-area: description;
+  }
+
+  .contact .description p {
+    max-width: 40rem;
+  }
+
+  footer .container {
+    margin: 2.5rem 11.5rem;
+  }
+}
