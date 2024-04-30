@@ -24,19 +24,25 @@
 }
 
 html {
-  font-size: 62.5%; /* font-size 1rem = 10px on default browser settings */
-  scroll-behavior: smooth; /* Scroll suave ao mudar de section */
+  font-size: 62.5%;
+  scroll-behavior: smooth; 
 }
 
 a {
   text-decoration: none;
 }
 
-/* --------- HEADER --------- */
+@media (min-width: 1024px) {
+  .container {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+}
 
+/* --------- HEADER --------- */
 .logo {
-  width: 60px;
-  height: 60px;
+  width: 55px;
+  height: 55px;
   border: 2px solid var(--color-golden-200);
   border-radius: 50%;
 }
@@ -60,9 +66,9 @@ nav {
 
 nav .container {
   width: 100%;
-  max-width: 1210px;
-  padding-left: 20px;
-  padding-right: 20px;
+  max-width: 1170px;
+  /* padding-left: 40px;
+  padding-right: 40px; */
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -148,7 +154,6 @@ nav .container {
 }
 
 /* --------- SECTION - BANNER --------- */
-
 .banner {
   position: relative;
   padding-top: 8rem;
@@ -174,8 +179,8 @@ nav .container {
 .banner .container {
   position: relative;
   max-width: 1140px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
   width: 100%;
   max-width: 1170px;
 }
@@ -190,7 +195,6 @@ nav .container {
 
 .banner .description h1 {
   text-transform: uppercase;
-  font-family: "Montserrat", Sans-serif;
   text-align: center;
   font-size: 7rem;
   color: var(--color-golden-200);
@@ -234,7 +238,7 @@ nav .container {
 
 /* --------- SECTION - EXPERTISES --------- */
 .expertises {
-  padding: 12rem 0;
+  padding: 8rem 0;
   background: linear-gradient(
     180deg,
     rgba(252, 253, 255, 1) 0%,
@@ -244,7 +248,6 @@ nav .container {
 
 .expertises .consumer {
   margin-bottom: 8rem;
-
   display: flex;
   justify-content: center;
   gap: 6rem;
@@ -253,7 +256,6 @@ nav .container {
 .consumer-image {
   width: 470px;
   height: 360px;
-
   display: grid;
 }
 
@@ -274,7 +276,6 @@ nav .container {
 
 .consumer .description {
   max-width: 55rem;
-
   display: flex;
   flex-direction: column;
 }
@@ -286,7 +287,6 @@ nav .container {
 
 .consumer .description span {
   margin-bottom: 1rem;
-
   font-size: 1.4rem;
   letter-spacing: 4.5px;
   color: var(--color-blue-200);
@@ -294,7 +294,6 @@ nav .container {
 
 .consumer .description h4 {
   margin-bottom: 0.8rem;
-
   font-weight: 400;
   font-size: 24px;
   line-height: 44px;
@@ -314,17 +313,22 @@ nav .container {
   align-self: flex-start;
 }
 
+.container-button {
+  display: flex;
+  justify-content: center;
+}
+
 /* --------- SECTION - HIGHLIGHTS --------- */
 .highlights {
   display: flex;
   justify-content: space-around;
   background: url("assets/highlight-background.png") no-repeat;
   background-size: cover;
+  background-position: center;
 }
 
 .highlights .container {
   margin: 11rem 0;
-
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -346,7 +350,6 @@ nav .container {
 }
 
 .highlights .description h2 {
-  font-family: Playfair Display SC;
   font-size: 4.2rem;
   color: var(--color-white-800);
 }
@@ -354,76 +357,64 @@ nav .container {
 .highlights .itens {
   width: 100%;
   max-width: 1170px;
-
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 3rem;
 }
 
 .highlights .item {
+  background: #fff;
+  padding-bottom: 24px;
+  border-radius: 16px;
   max-width: 37rem;
-
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .highlights img {
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
   width: 100%;
 }
 
 .highlights .item h4 {
   text-align: center;
-  font-size: 2.4rem;
-  line-height: 4.4rem;
-  margin: 3.2rem 0 1.6rem 0;
-  color: var(--color-white-800);
+  font-size: 2rem;
+  margin-top: 24px;
+  color: var(--color-black-100);
 }
 
 .highlights .item p {
   font-size: 1.6rem;
-  line-height: 3rem;
+  padding: 16px;
   text-align: center;
-  letter-spacing: 0.05rem;
-  color: var(--color-white-600);
+  color: var(--color-black-100);
 }
 
 /* --------- SECTION - ABOUT-ME --------- */
 .about-me {
   height: 95rem;
-
   display: flex;
   justify-content: center;
-
   background-color: var(--color-white-700);
 }
 
-.about-me .brand {
-  display: flex;
-
-  position: absolute;
-  left: 0;
-  width: 30vw;
-  height: 95rem;
-  background-color: var(--color-white-600);
-}
-
 .about-me .brand img {
+  max-width: 400px;
   align-self: center;
-  margin-left: 5rem;
+  margin-left: 30%;
   opacity: 25%;
 }
 
 .about-me .container {
   width: 100%;
   max-width: 1170px;
-
   display: grid;
   grid-template-columns: 1fr 2fr;
   grid-template-areas: "description image";
   align-items: center;
   gap: 6rem;
-
   z-index: 1;
 }
 
@@ -470,8 +461,9 @@ nav .container {
 }
 
 .photo-black img {
-  /* max-width: 340px; */
-
+  max-width: 340px;
+  filter: grayscale(100%);
+  border-radius: 8px;
   width: auto;
   height: auto;
   max-width: 40vw;
@@ -526,14 +518,13 @@ nav .container {
 .item-expertise p {
   font-size: 1.6rem;
   line-height: 3rem;
-
   letter-spacing: 0.05rem;
 }
 
 /* --------- SEPARATOR --------- */
 .expertises .separator-line {
   height: 0.2rem;
-  margin: 12rem 0;
+  margin: 8rem 0;
   background: linear-gradient(
     90deg,
     rgba(255, 255, 255, 1) 0%,
@@ -611,48 +602,6 @@ nav .container {
   align-self: flex-start;
 }
 
-/* --------- SECTION - WHATSAPP --------- */
-.whatsapp {
-  background: url("assets/background-whatsapp.png");
-}
-
-.whatsapp .container {
-  height: 40rem;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 3.6rem;
-  background: url("assets/background-whatsapp.png");
-  background-position: center;
-  background-size: cover;
-}
-
-.whatsapp .container h3 {
-  width: 87rem;
-  font-size: 3.2rem;
-  line-height: 5.8rem;
-  text-align: center;
-  letter-spacing: 0.05rem;
-  color: var(--color-blue-300);
-}
-
-.btn-whatsapp {
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  padding: 2rem 3.2rem;
-  gap: 1.6rem;
-  background: transparent;
-  border: 1px solid var(--color-white-700);
-
-  font-size: 1.6rem;
-  font-weight: 700;
-  letter-spacing: 0.25rem;
-  color: var(--color-white-700);
-}
-
 /* --------- SECTION - CONTACT --------- */
 .social h4 {
   margin-bottom: 1.7rem;
@@ -721,9 +670,13 @@ nav .container {
 .contact {
   display: flex;
   justify-content: center;
-
   background-image: url("assets/background-header.png");
   background-size: cover;
+}
+
+.contact .logo {
+  width: 50px;
+  height: 50px;
 }
 
 .contact .container {
@@ -731,7 +684,6 @@ nav .container {
   max-width: 1170px;
   margin-top: 10.7rem;
   margin-bottom: 8.6rem;
-
   display: grid;
   grid-template-columns: 40rem 1fr 1fr;
   justify-items: center;
@@ -739,7 +691,6 @@ nav .container {
 
 .contact .description p {
   margin-top: 2.4rem;
-
   font-size: 1.4rem;
   line-height: 2.6rem;
   letter-spacing: 0.05rem;
@@ -759,6 +710,8 @@ nav .container {
   display: flex;
   gap: 1.6rem;
 }
+
+
 
 /* ----------------- */
 .contact .forms-contact {
@@ -809,10 +762,8 @@ nav .container {
 /* --------- FOOTER --------- */
 footer {
   border-top: 1px solid rgba(255, 255, 255, 0.2);
-
   display: flex;
   justify-content: center;
-
   background-image: url("assets/background-header.png");
   background-size: cover;
 }
@@ -821,7 +772,6 @@ footer .container {
   width: 100%;
   max-width: 1170px;
   margin: 3.5rem 0;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -837,6 +787,28 @@ footer p {
 footer p span {
   font-weight: bold;
 }
+
+/* --------------- BOTÃO WHATSAPP --------------- */
+.whatsapp-float {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  bottom: 24px;
+  right: 24px;
+  background-color: #25d366;
+  color: #FFF;
+  border-radius: 50px;
+  text-align: center;
+  box-shadow: 2px 2px 3px #999;
+}
+
+.whatsapp-float img {
+  width: 32px;
+}
+
 
 /* --------------- AJUSTES DO MENU INTERATIVO --------------- */
 @media screen and (max-width: 1024px) {
@@ -887,4 +859,18 @@ footer p span {
     display: flex;
     visibility: visible;
   }
+}
+
+
+.maps {
+  background: rgb(6, 14, 30);
+  padding: 10rem 0 1rem;
+}
+
+.maps h2 {
+  font-size: 4.2rem;
+  color: var(--color-white-800);
+  text-transform: uppercase;
+  margin-bottom: 4rem;
+  text-align: center;
 }

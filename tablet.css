@@ -4,8 +4,8 @@
   nav .container {
     max-width: 1140px;
     margin: 0 auto;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
   }
 
   .menu .btn-ct-menu {
@@ -21,7 +21,7 @@
 
   /* --------- EXPERTISES --------- */
   .expertises .consumer {
-    margin: 0 11rem;
+    margin: 0 40px;
     flex-direction: column-reverse;
   }
 
@@ -30,13 +30,13 @@
   }
 
   .areas-expertise .items-expertise {
-    margin: 0 11rem;
+    margin: 0 40px;
     max-width: initial;
     grid-template-columns: 1fr;
   }
 
   .expertises .family-right {
-    margin: 0 11rem;
+    margin: 0 40px;
     flex-direction: column;
   }
 
@@ -73,17 +73,22 @@
   }
 
   .about-me .container {
-    padding: 10rem 10.7rem 2rem 10.7rem;
-
-    grid-template-columns: 1fr;
-    grid-template-areas:
-      "description"
-      "image";
+    padding: 10rem 0 2rem 0;
+    display: flex;
     gap: 3rem;
   }
+  @media (max-width: 1024px) {
+    .about-me .container {
+      flex-direction: column;
+      align-items: center;
+      padding-left: 40px;
+      padding-right: 40px;
+    }
 
-  .photo-black {
-    grid-area: image;
+    .photo-black {
+      grid-area: image;
+    } 
+  
   }
 
   .about-me .description {
@@ -94,56 +99,9 @@
     max-width: 95%;
   }
 
-  /* --------- DEPOSITIONS --------- */
-  .depositions {
-    margin-top: 7.3rem;
-  }
-
-  .logo-k-testimony {
-    display: none;
-    visibility: hidden;
-  }
-
-  .testimony {
-    flex-direction: column;
-    gap: 0;
-  }
-
-  .testimony-item {
-    width: 56rem;
-    height: auto;
-  }
-
-  .testimony-item:nth-child(2),
-  .testimony-item:nth-child(3) {
-    /* TEMPORARY */
-    /* Desativar quando for fazer a 
-    passagem automática através de JS */
-    display: none;
-    visibility: hidden;
-  }
-
-  .testimony .dots {
-    display: initial;
-    visibility: visible;
-    transform: rotate(270deg); /* TEMPORARY */
-  }
-
-  /* --------- WHATSAPP --------- */
-  .whatsapp .container {
-    padding: 0 11.5rem;
-    background-position: right;
-  }
-
-  .whatsapp .container h3 {
-    width: auto;
-    font-size: 2.4rem;
-  }
-
   /* --------- CONTACT --------- */
   .contact .container {
-    margin: 8rem 11.5rem;
-
+    margin: 8rem 40px;
     grid-template-columns: 1fr;
     grid-template-areas:
       "forms-contact"
